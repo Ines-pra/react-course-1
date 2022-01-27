@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding-left: 20px;
+  /* padding-left: 20px; */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -13,9 +13,70 @@ code {
     monospace;
 }
 
-#btnCreate {
+/* #btnCreate {
   padding: 6px;
   background-color: black;
   color: white;
   border: none;
+} */
+
+h1 {
+  padding-left: 30px;
+}
+
+.header {
+  background-color: teal;
+  height: 20%;
+  width: 20%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+input {
+  padding: 5px;
+  margin: 10px;
+}
+
+.containerInput {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  padding: 5px;
+  margin: 10px;
+}
+
+.todoList {
+  flex: auto;
+  padding-left: 30px;
+  /* width: 30%; */
+}
+
+.todo {
+  display: flex;
+  flex-direction: row;
+}
+
+.tasks {
+  display: flex;
+	flex-direction: row;
+  border: 1px solid teal ;
+  width: 40%;
+  margin: 10px;
+  display: flex;
+  padding-left: 10px;
+}
+
+.task {
+  flex: auto;
+}
+
+.btnDelete {
+  border: none; 
+  color: white;
+  background-color: tomato;
 }
