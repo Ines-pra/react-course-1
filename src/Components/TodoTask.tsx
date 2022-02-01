@@ -10,10 +10,12 @@ const ToDoTask = ({task, completeTask}: Props) => {
     return (
         <div className='tasks'>
             <div className='task'>
-                <p> Task : {task.taskName} </p>
+                <p> Task : {task.taskName} </p> 
+                <p> Description : {task.description}</p>
                 <p> Priority : {task.priority}</p>
+                <p> Assigned To : {task.assignedTo}</p>
             </div>
-            <div >
+            <div>
                 <button className='btnDelete' onClick={() => {completeTask(task.taskName)}}> X </button>
             </div>
         </div>
