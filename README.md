@@ -1,4 +1,4 @@
-# React course 1
+# React course 1 - PERRIA Inès
 
 ## Getting started
 
