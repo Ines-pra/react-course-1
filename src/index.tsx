@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import AppDrag from './Components/DragAndDrop';
 
 // var liste= {
 //   title: '',
@@ -79,6 +80,8 @@ ReactDOM.render(
     </div>
     
     {listeV} */}
+
+    <AppDrag />
 
   </React.StrictMode>,
 

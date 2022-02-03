@@ -1,11 +1,7 @@
 import React, { FC , ChangeEvent , useState} from 'react';
 import ToDoTask from './Components/TodoTask';
 import { ITask } from './Interfaces';
-
 // export default () => <div className="App"> <h1> ToDo List </h1></div>;
-
-
-// Create new todo with title / description / priority / assigned to
 
 const App: FC = () => {
     const [task, setTask] = useState<string>("");
@@ -36,16 +32,15 @@ const App: FC = () => {
         setPriority(0);
         setAssigned('');
         console.log(todo);
-    }
+    };
 
     const completeTask = (taskNameToDelete: string): void => {
         setTodoList(todo.filter((task) => {
             return task.taskName !== taskNameToDelete
         }))
-    }
+    };
 
     return (
-
 
     <div className="App">
         <h1>ToDo List</h1>
@@ -73,8 +68,7 @@ const App: FC = () => {
                 <h2>FINISH </h2>
             </div>
         </div> 
-        
-    </div>
+      </div>
 
     )
     };
