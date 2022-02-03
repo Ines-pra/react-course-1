@@ -54,11 +54,18 @@ button {
   flex: auto;
   padding-left: 30px;
   /* width: 30%; */
+  margin : 2%;
+}
+
+.todoList h2 {
+  background-color: aliceblue;
+  padding: 20px;
 }
 
 .todo {
   display: flex;
   flex-direction: row;
+ 
 }
 
 .tasks {

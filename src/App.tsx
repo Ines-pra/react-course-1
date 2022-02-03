@@ -11,7 +11,7 @@ const App: FC = () => {
     const [task, setTask] = useState<string>("");
     const [description, setDescription] = useState<string>("");
     const [priority, setPriority] = useState<number>(0);
-    const [assignedTo, setAssigned] = useState<string>("");
+    const [assignedTo, setAssigned] = useState<string>("todo");
     const [todo, setTodoList] = useState<ITask[]>([]);
 
     const handleChange = (event: ChangeEvent<HTMLInputElement>): void => {
@@ -21,9 +21,11 @@ const App: FC = () => {
             setPriority(Number(event.target.value));
         } else if (event.target.name === "description") {
             setDescription(event.target.value);
-        } else if (event.target.name === "assignedTo") {
-            setAssigned(event.target.value);
-        };
+        } 
+        // else if (event.target.name === "assignedTo") {
+        //     setAssigned(event.target.value);
+        // }
+        ;
     };
 
     const addTask = (): void => {
@@ -52,7 +54,11 @@ const App: FC = () => {
                 <input type="text" placeholder='Task' value={task} name ="task" onChange={handleChange} />
                 <input type="text" placeholder='Description of the task' value={description} name="description" onChange={handleChange}/>
                 <input type="number" placeholder='Priority of the task' value={priority} name="priority" onChange={handleChange}/>
-                <input type="text" placeholder='Assigned To' value={assignedTo} name="assignedTo" onChange={handleChange}/>
+                {/* <input type="text" placeholder='Assigned To' value={assignedTo} name="assignedTo" onChange={handleChange}/> */}
+                {/* <input type='select' value={assignedTo} name='assignedTo' onChange={handleChange}>
+                    <option value="todo"> To Do </option>
+                    <option value="finish"> Finish </option>
+                </input> */}
             </div>
             <button className='btnAdd' onClick={addTask}> Add Task </button>
         </div>
