@@ -37,13 +37,8 @@ const AddTask: FC = () => {
             <div className='containerInput'>
                 <div>
                 <input type="text" placeholder='Name' value={name} name="name" onChange={handleChange} />
-                {/* <input type="text" placeholder='Task' value={task} name="task" onChange={handleChange} /> */}
                      <input type="text" placeholder='Description of the task' value={description} name="description" onChange={handleChange} />
                     <input type="number" placeholder='Priority of the task' value={priority} name="priority" onChange={handleChange} />
-                    {/* <input type="text" placeholder='Assigned To' value={assignedTo} name="assignedTo" onChange={handleChange}/> */}
-                    {/* <input type="text" placeholder='Task' name="task"  />
-                    <input type="text" placeholder='Description of the task'  name="description" />
-                    <input type="number" placeholder='Priority of the task'  name="priority"  /> */}
                 </div>
                <div>
                     <button className='btnAdd' onClick={addTask}> Ajouter </button>  

@@ -6,7 +6,8 @@ const App: FC = () => {
     return (
          <div className='App'>
              
-        <Tasks />
+             <Tasks />
+             
          </div>   
     
         )

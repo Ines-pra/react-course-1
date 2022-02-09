@@ -16,7 +16,7 @@ const Column = ({column,tasks}: Props) => {
     // console.log(column);
     // console.log(tasks);
     return (
-        // <div>
+        
             <div className="column">
                 <h3> {column.title} </h3>
                 <Droppable droppableId={column.id}>
@@ -29,10 +29,7 @@ const Column = ({column,tasks}: Props) => {
                     )}
                 </Droppable>
             </div>
-          
-           
-                
-        // </div>
+ 
         )
 }
 
