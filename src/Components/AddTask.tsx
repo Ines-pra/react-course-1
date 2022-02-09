@@ -29,7 +29,6 @@ const AddTask: FC = () => {
         setDescription('');
         setPriority(0);
         setAssigned('');
-        console.log(todo);
     };
 
     return(
@@ -37,7 +36,7 @@ const AddTask: FC = () => {
             <div className='containerInput'>
                 <div>
                 <input type="text" placeholder='Name' value={name} name="name" onChange={handleChange} />
-                     <input type="text" placeholder='Description of the task' value={description} name="description" onChange={handleChange} />
+                    <input type="text" placeholder='Description of the task' value={description} name="description" onChange={handleChange} />
                     <input type="number" placeholder='Priority of the task' value={priority} name="priority" onChange={handleChange} />
                 </div>
                <div>

@@ -158,7 +158,7 @@ const Tasks : FC = () => {
             <h1>Tasks</h1>
             <div className="add">
             <div>
-            <div className='containerInput'>
+            {/* <div className='containerInput'>
                 <div>
                     <input type="text" placeholder='Name' value={name} name="name" onChange={handleChange} />
                     <input type="text" placeholder='Description of the task' value={description} name="description" onChange={handleChange} />
@@ -166,12 +166,14 @@ const Tasks : FC = () => {
 
                 </div>
                <div>
-                    {/* <button className='btnAdd' onClick={addTask}> Ajouter </button>   */}
-                    <button className='btnAdd' >Ajouter </button>
+                 <button className='btnAdd' onClick={addTask}> Ajouter </button>  
+                  
                </div>
-            </div>  
+            </div>   */}
+            </div>
+            <AddTask />
             
-        </div>
+        
             </div>
             <div className="container">
                 <DragDropContext onDragEnd={onDragEnd}>
